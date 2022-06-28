@@ -8,7 +8,7 @@ export RSW_DOWNLOAD_URL=https://s3.amazonaws.com/rstudio-ide-build/server/bionic
 apt update --fix-missing
 export RSW_VERSION_URL=`echo -n "${RSW_VERSION}" | sed 's/+/-/g'`
 curl -O ${RSW_DOWNLOAD_URL}/${RSW_NAME}-${RSW_VERSION_URL}-amd64.deb
-gdebi ${RSW_NAME}-${RSW_VERSION_URL}-amd64.deb
+gdebi -n ${RSW_NAME}-${RSW_VERSION_URL}-amd64.deb
 rm ${RSW_NAME}-${RSW_VERSION_URL}-amd64.deb
 apt autoremove -y
 apt clean
