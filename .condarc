@@ -1,0 +1,6 @@
+ssl_verify: true
+channels:
+- defaults
+- condaforge
+- pytorch
+- fastai
