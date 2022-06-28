@@ -11,9 +11,11 @@ rm -rf anaconda.sh
 cd /opt/anaconda
 export PATH=/opt/anaconda/bin:$PATH
 conda install -c conda-forge -y mamba
-mamba install -c fastai -c pytorch -c conda-forge -y anaconda fastai jupyter fastbook voila jedi pytorch torchvision torchaudio cudatoolkit folium plotly scikit-learn matplotlib pandas anaconda-navigator jupyterlab tensorflow-cpu tensorflow-gpu
-pip install gmplot sentencepiece
-pip install numpy guizero gpiozero requests pillow scipy matplotlib pgzero pygame flask pytest colorama birdseye beautifulsoup4 pandas lxml openpyxl XlsxWriter xlrd xlwt html5lib odfpy 
-pip install 'fastcore>1.3.26'
+mamba install -c fastai -c pytorch -c conda-forge -y anaconda fastai jupyter fastbook voila jedi pytorch torchvision torchaudio cudatoolkit folium plotly scikit-learn matplotlib pandas anaconda-navigator jupyterlab tensorflow
+pip install gmplot sentencepiece numpy guizero gpiozero requests pillow scipy matplotlib pgzero pygame flask pytest colorama birdseye beautifulsoup4 pandas lxml openpyxl XlsxWriter xlrd xlwt html5lib odfpy 'fastcore>1.3.26'
 conda clean -a
-cp -n .condarc /opt/anaconda/
+
+CONDARC=/opt/anaconda/.condarc
+if [ ! -f "$CONDARC" ]; then
+	cp .condarc /opt/anaconda/
+fi
