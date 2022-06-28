@@ -2,7 +2,6 @@
 
 export ANACONDA_VER=2022.05
 export ANACONDA_DOWNLOAD_URL=https://repo.anaconda.com/archive
-export PYTHON_VERSION=3.9.12
 
 # download and install base anaconda
 curl -o anaconda.sh $ANACONDA_DOWNLOAD_URL/Anaconda3-$ANACONDA_VER-Linux-x86_64.sh 
