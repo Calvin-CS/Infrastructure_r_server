@@ -12,8 +12,52 @@ rm -rf anaconda.sh
 cd /opt/anaconda
 export PATH=/opt/anaconda/bin:$PATH
 conda install -c conda-forge -y mamba
-mamba install -c fastai -c pytorch -c conda-forge -y anaconda fastai jupyter fastbook voila jedi pytorch torchvision torchaudio cudatoolkit folium plotly scikit-learn matplotlib pandas anaconda-navigator jupyter jupyterlab rsp_jupyter rsconnect_jupyter rsconnect_python tensorflow
-pip install gmplot sentencepiece numpy guizero gpiozero requests pillow scipy matplotlib pgzero pygame flask pytest colorama birdseye beautifulsoup4 pandas lxml openpyxl XlsxWriter xlrd xlwt html5lib odfpy 'fastcore>1.3.26'
+mamba install -c fastai -c pytorch -c conda-forge -y anaconda \
+	fastai \
+	fastbook \
+	voila \
+	jedi \
+	pytorch \
+	torchvision \
+	torchaudio \
+	cudatoolkit \
+	folium \
+	plotly \
+	scikit-learn \
+	matplotlib \
+	pandas \
+	anaconda-navigator \
+	tensorflow && \
+pip install gmplot \
+	sentencepiece \
+	numpy \
+	guizero \
+	gpiozero \
+	requests \
+	pillow \
+	scipy \
+	matplotlib \
+	pgzero \
+	pygame \
+	flask \
+	pytest \
+	colorama \
+       	birdseye \
+	beautifulsoup4 \
+	pandas \
+	lxml \
+	openpyxl \
+	XlsxWriter \
+	xlrd \
+	xlwt \
+	html5lib \
+	odfpy \
+	'fastcore>1.3.26' \
+	jupyter \
+	jupyerlab \
+	rsp_jupyter \
+	rsconnect_jupyter \
+	rsconnect_python
 conda clean -a
 
 # enable jupyer extensions
