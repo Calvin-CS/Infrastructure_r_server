@@ -1,8 +1,8 @@
-# Infrastructure_aznfs_staging
+# Infrastructure_r_server
 
-Various scripts / etc for post-staging of aznfs' various file shares.  Most of these will be run on r.cs.calvin.edu to stage up the following directories:
+Various scripts / etc for post-staging of r.cs.calvin.edu, and populating of the various file shares.  These scripts should stage up the following directories:
 
 /opt/R
 /opt/python
 /opt/anaconda
-/opt/code
+/opt/code-server
