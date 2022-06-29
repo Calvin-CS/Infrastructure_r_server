@@ -8,6 +8,12 @@ curl -o anaconda.sh $ANACONDA_DOWNLOAD_URL/Anaconda3-$ANACONDA_VER-Linux-x86_64.
 bash anaconda.sh -b -p /opt/anaconda -u
 rm -rf anaconda.sh
 
+# setup condarc file
+CONDARC=/opt/anaconda/.condarc
+if [ ! -f "$CONDARC" ]; then
+	cp ~/.condarc /opt/anaconda/
+fi
+
 # add additional packages into anaconda
 cd /opt/anaconda
 export PATH=/opt/anaconda/bin:$PATH
@@ -67,9 +73,3 @@ conda clean -a
 /opt/anaconda/bin/jupyter-nbextension install --sys-prefix --py rsconnect_jupyter
 /opt/anaconda/bin/jupyter-nbextension enable --sys-prefix --py rsconnect_jupyter
 /opt/anaconda/bin/jupyter-serverextension enable --sys-prefix --py rsconnect_jupyter
-
-# setup condarc file
-CONDARC=/opt/anaconda/.condarc
-if [ ! -f "$CONDARC" ]; then
-	cp ~/.condarc /opt/anaconda/
-fi
