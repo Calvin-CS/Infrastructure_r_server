@@ -11,7 +11,7 @@ rm -rf anaconda.sh
 # setup condarc file
 CONDARC=/opt/anaconda/.condarc
 if [ ! -f "$CONDARC" ]; then
-	cp ~/.condarc /opt/anaconda/
+	cp .condarc /opt/anaconda/
 fi
 
 # add additional packages into anaconda
