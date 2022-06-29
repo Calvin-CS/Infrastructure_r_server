@@ -63,7 +63,7 @@ pip install jupyter \
 	rsp_jupyter \
 	rsconnect_jupyter \
 	rsconnect_python
-conda clean -a
+/usr/bin/yes | conda clean -a
 
 # enable jupyer extensions
 /opt/anaconda/bin/jupyter-nbextension install --sys-prefix --py rsp_jupyter

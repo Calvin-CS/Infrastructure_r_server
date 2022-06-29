@@ -12,6 +12,3 @@ rm ${RSW_NAME}-${RSW_VERSION_URL}-amd64.deb
 apt autoremove -y
 apt clean
 rm -rf /var/lib/rstudio-server/r-versions
-
-# install VS Code server
-rstudio-server install-vs-code /opt/code-server
