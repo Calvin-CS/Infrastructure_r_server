@@ -17,9 +17,8 @@ fi
 # add additional packages into anaconda
 cd /opt/anaconda
 export PATH=/opt/anaconda/bin:$PATH
-conda install -c conda-forge -y mamba
-mamba install -c fastai -c pytorch -c conda-forge -y anaconda \
-	fastai \
+conda install -y mamba
+/usr/bin/yes | mamba install fastai \
 	fastbook \
 	voila \
 	jedi \
@@ -36,8 +35,7 @@ mamba install -c fastai -c pytorch -c conda-forge -y anaconda \
 	tensorflow 
 pip install gmplot \
 	sentencepiece
-pip install 
-	numpy \
+pip install numpy \
 	guizero \
 	gpiozero \
 	requests \
