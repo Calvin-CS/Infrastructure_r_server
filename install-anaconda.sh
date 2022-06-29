@@ -59,7 +59,7 @@ pip install numpy \
 	odfpy
 pip install 'fastcore>1.3.26'
 pip install jupyter \
-	jupyerlab \
+	jupyterlab \
 	rsp_jupyter \
 	rsconnect_jupyter \
 	rsconnect_python
