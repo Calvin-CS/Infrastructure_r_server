@@ -27,9 +27,10 @@ mamba install -c fastai -c pytorch -c conda-forge -y anaconda \
 	matplotlib \
 	pandas \
 	anaconda-navigator \
-	tensorflow && \
+	tensorflow 
 pip install gmplot \
-	sentencepiece \
+	sentencepiece
+pip install 
 	numpy \
 	guizero \
 	gpiozero \
@@ -51,9 +52,9 @@ pip install gmplot \
 	xlrd \
 	xlwt \
 	html5lib \
-	odfpy \
-	'fastcore>1.3.26' \
-	jupyter \
+	odfpy
+pip install 'fastcore>1.3.26'
+pip install jupyter \
 	jupyerlab \
 	rsp_jupyter \
 	rsconnect_jupyter \
@@ -70,5 +71,5 @@ conda clean -a
 # setup condarc file
 CONDARC=/opt/anaconda/.condarc
 if [ ! -f "$CONDARC" ]; then
-	cp .condarc /opt/anaconda/
+	cp ~/.condarc /opt/anaconda/
 fi
