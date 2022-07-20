@@ -12,3 +12,7 @@ rm -rf r-${R_VERSION}_1_amd64.deb
 # install R packages
 export PATH=/opt/R/${R_VERSION}/bin:$PATH
 Rscript Rpackages.R
+
+# create symlinks
+ln -s /opt/R/${R_VERSION}/bin/R /opt/R/R
+ln -s /opt/R/${R_VERSION}/bin/Rscript /opt/R/Rscript
