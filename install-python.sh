@@ -12,7 +12,7 @@ rm -rf miniconda.sh
 
 # install and enable jupyter and appropriate notebook extensions
 export PATH=/opt/python/$PYTHON_VERSION/bin:$PATH
-/opt/python/$PYTHON_VERSION/bin/pip install jupyter jupyterlab rsp_jupyter rsconnect_jupyter rsconnect_python
+/opt/python/$PYTHON_VERSION/bin/pip install jupyter jupyterlab rsp_jupyter rsconnect_jupyter rsconnect_python workbench_jupyterlab
 /opt/python/$PYTHON_VERSION/bin/jupyter-nbextension install --sys-prefix --py rsp_jupyter 
 /opt/python/$PYTHON_VERSION/bin/jupyter-nbextension enable --sys-prefix --py rsp_jupyter 
 /opt/python/$PYTHON_VERSION/bin/jupyter-nbextension install --sys-prefix --py rsconnect_jupyter 

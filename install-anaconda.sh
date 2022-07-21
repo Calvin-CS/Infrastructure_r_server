@@ -62,7 +62,8 @@ pip install jupyter \
 	jupyterlab \
 	rsp_jupyter \
 	rsconnect_jupyter \
-	rsconnect_python
+	rsconnect_python \
+	workbench_jupyterlab
 /usr/bin/yes | conda clean -a
 
 # enable jupyer extensions
