@@ -11,4 +11,9 @@ gdebi -n ${RSW_NAME}-${RSW_VERSION_URL}-amd64.deb
 rm ${RSW_NAME}-${RSW_VERSION_URL}-amd64.deb
 apt autoremove -y
 apt clean
-rm -rf /var/lib/rstudio-server/r-versions
+rm -f /var/lib/rstudio-server/r-versions
+
+# drop conf files
+cp -f r-versions /var/lib/rstudio-server/
+cp -f r-versions /etc/rstudio/
+cp -f rsession-profile /etc/rstudio/
