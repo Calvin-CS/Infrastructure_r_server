@@ -1,3 +1,6 @@
 install.packages('mosaic',repos = "http://cran.us.r-project.org")
 install.packages('tidyverse',repos = "http://cran.us.r-project.org")
 install.packages('reticulate',repos = "http://cran.us.r-project.org")
+install.packages('devtools',repos = "http://cran.us.r-project.org")
+install.packages('keras',repos = "http://cran.us.r-project.org")
+install.packages('nycflights13',repos = "http://cran.us.r-project.org")
