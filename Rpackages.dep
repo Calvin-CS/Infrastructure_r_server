@@ -67,6 +67,7 @@ libxt6
 nano-tiny
 net-tools
 nfs-common
+openjdk-17-jdk
 rrdtool
 subversion
 unzip
