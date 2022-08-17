@@ -55,6 +55,7 @@ libthai-data
 libtiff5
 libtirpc3
 libtk8.6
+libudunits2-dev
 libuser
 libuser1-dev
 libwebp6
@@ -70,6 +71,7 @@ nano-tiny
 net-tools
 nfs-common
 openjdk-17-jdk
+pandoc
 rrdtool
 subversion
 unzip
