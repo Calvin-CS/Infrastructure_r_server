@@ -65,6 +65,7 @@ libxml2-dev
 libxrender1
 libxss1
 libxt6
+make
 nano-tiny
 net-tools
 nfs-common
