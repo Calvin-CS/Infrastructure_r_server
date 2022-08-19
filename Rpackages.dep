@@ -74,6 +74,7 @@ openjdk-17-jdk
 pandoc
 rrdtool
 subversion
+texlive
 unzip
 vim-tiny
 wget
