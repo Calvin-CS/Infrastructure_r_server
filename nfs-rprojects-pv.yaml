@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-nfs-aznfs-rprojects
+spec:
+  capacity:
+    storage: 49Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: nfs
+  mountOptions:
+    - soft
+    - relatime
+    - vers=3
+    - namlen=255
+    - proto=tcp
+    - timeo=600
+    - retrans=2
+    - sec=sys
+    - acl
+  nfs:
+    path: /export/rprojects
+    server: aznfs-int.cs.calvin.edu
