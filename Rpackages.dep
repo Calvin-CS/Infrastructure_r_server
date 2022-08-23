@@ -76,6 +76,7 @@ pandoc
 rrdtool
 subversion
 texlive
+texlive-latex-extra
 unzip
 vim-tiny
 wget
