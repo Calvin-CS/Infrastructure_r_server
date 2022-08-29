@@ -1,4 +1,5 @@
 acl
+build-essential
 bzip2-doc
 curl
 fontconfig
