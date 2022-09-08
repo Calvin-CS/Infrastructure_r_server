@@ -1,0 +1,5 @@
+Package: csanaconda
+Version: %%DATETIME%%-1
+Maintainer: Chris Wieringa <cwieri39@calvin.edu>
+Architecture: all
+Description:  Ubuntu packaging of Anaconda3 Individual Edition from anaconda.com with added libraries
