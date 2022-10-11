@@ -20,6 +20,7 @@ spec:
     - retrans=2
     - sec=sys
     - acl
+    - noac
   nfs:
     path: /export/rprojects
     server: aznfs-int.cs.calvin.edu
