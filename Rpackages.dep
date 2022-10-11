@@ -1,4 +1,5 @@
 acl
+build-essential
 bzip2-doc
 curl
 fontconfig
@@ -33,6 +34,7 @@ libjpeg-turbo8
 libjpeg-turbo8-dev
 liblapack3
 liblapack-dev
+libmagick++-dev
 libmysqlclient-dev
 libpango-1.0-0
 libpangocairo-1.0-0
@@ -75,6 +77,7 @@ pandoc
 rrdtool
 subversion
 texlive
+texlive-latex-extra
 unzip
 vim-tiny
 wget
