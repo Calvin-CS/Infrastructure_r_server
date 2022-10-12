@@ -3,7 +3,7 @@
 # install Rstudio
 # daily version: 2022.07.2-564.pro1
 #export RSW_VERSION=2022.07.1-554.pro3
-export RSW_VERSION=2022.07.2-564.pro1
+export RSW_VERSION=2022.07.2-576.pro12
 export RSW_NAME=rstudio-workbench
 export RSW_DOWNLOAD_URL=https://s3.amazonaws.com/rstudio-ide-build/server/bionic/amd64
 
