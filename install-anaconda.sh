@@ -55,6 +55,9 @@ pip install numpy \
 	XlsxWriter \
 	xlrd \
 	xlwt \
+	streamlit \
+	plotly \
+	pydeck \
 	html5lib \
 	odfpy
 pip install 'fastcore>1.3.26'
