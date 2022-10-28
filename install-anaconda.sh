@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export ANACONDA_VER=2022.05
+export ANACONDA_VER=2022.10
 export ANACONDA_DOWNLOAD_URL=https://repo.anaconda.com/archive
 
 # download and install base anaconda
@@ -32,35 +32,35 @@ conda install -y mamba
 	matplotlib \
 	pandas \
 	anaconda-navigator \
-	tensorflow 
-pip install gmplot \
-	sentencepiece
-pip install numpy \
-	guizero \
-	gpiozero \
-	requests \
-	pillow \
-	scipy \
-	matplotlib \
-	pgzero \
-	pygame \
-	flask \
-	pytest \
-	colorama \
-       	birdseye \
-	beautifulsoup4 \
-	pandas \
-	lxml \
-	openpyxl \
-	XlsxWriter \
-	xlrd \
-	xlwt \
+	tensorflow \
 	streamlit \
 	plotly \
 	pydeck \
 	html5lib \
+	xlwt \
+	xlrd \
+	XlsxWriter \
+	openpyxl \
+	lxml \
+	pandas \
+	beautifulsoup4 \
+	colorama \
+	pytest \
+	flask \
+	matplotlib \
+	scipy \
+	pillow \
+	requests \
+	fastcore \
+	sentencepiece
+pip install gmplot \
+        numpy \
+	guizero \
+	gpiozero \
+	pgzero \
+	pygame \
+       	birdseye \
 	odfpy
-pip install 'fastcore>1.3.26'
 pip install jupyter \
 	jupyterlab \
 	rsp_jupyter \
