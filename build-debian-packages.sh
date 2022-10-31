@@ -15,6 +15,9 @@ do
 	# upload the package to cpscadmin
 	ssh -lroot cpscadmin.cs.calvin.edu "rm -f /usr/local/repos/cpsc-ubuntu/dists/focal/main/packages/cs$PACKAGE*deb"
 	scp cs$PACKAGE*deb root@cpscadmin.cs.calvin.edu:/usr/local/repos/cpsc-ubuntu/dists/focal/main/packages/
+
+	# remove the package once built
+	rm -f cs$PACKAGE*deb
 done
 
 # run the repo make script

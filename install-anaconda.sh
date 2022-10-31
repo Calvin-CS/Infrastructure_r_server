@@ -2,21 +2,22 @@
 
 export ANACONDA_VER=2022.10
 export ANACONDA_DOWNLOAD_URL=https://repo.anaconda.com/archive
+export ANACONDA_PATH=/export/anaconda
 
 # download and install base anaconda
 curl -o anaconda.sh $ANACONDA_DOWNLOAD_URL/Anaconda3-$ANACONDA_VER-Linux-x86_64.sh 
-bash anaconda.sh -b -p /opt/anaconda -u
+bash anaconda.sh -b -p $ANACONDA_PATH -u
 rm -rf anaconda.sh
 
 # setup condarc file
-CONDARC=/opt/anaconda/.condarc
+CONDARC=$ANACONDA_PATH/.condarc
 if [ ! -f "$CONDARC" ]; then
-	cp .condarc /opt/anaconda/
+	cp .condarc $ANACONDA_PATH/
 fi
 
 # add additional packages into anaconda
-cd /opt/anaconda
-export PATH=/opt/anaconda/bin:$PATH
+cd $ANACONDA_PATH
+export PATH=${ANACONDA_PATH}/bin:$PATH
 conda install -y mamba
 /usr/bin/yes | mamba install fastai \
 	fastbook \
@@ -67,12 +68,12 @@ pip install jupyter \
 	rsconnect_jupyter \
 	rsconnect_python \
 	workbench_jupyterlab
-pip install ryp2
+#pip install ryp2
 /usr/bin/yes | conda clean -a
 
 # enable jupyer extensions
-/opt/anaconda/bin/jupyter-nbextension install --sys-prefix --py rsp_jupyter
-/opt/anaconda/bin/jupyter-nbextension enable --sys-prefix --py rsp_jupyter
-/opt/anaconda/bin/jupyter-nbextension install --sys-prefix --py rsconnect_jupyter
-/opt/anaconda/bin/jupyter-nbextension enable --sys-prefix --py rsconnect_jupyter
-/opt/anaconda/bin/jupyter-serverextension enable --sys-prefix --py rsconnect_jupyter
+/export/anaconda/bin/jupyter-nbextension install --sys-prefix --py rsp_jupyter
+/export/anaconda/bin/jupyter-nbextension enable --sys-prefix --py rsp_jupyter
+/export/anaconda/bin/jupyter-nbextension install --sys-prefix --py rsconnect_jupyter
+/export/anaconda/bin/jupyter-nbextension enable --sys-prefix --py rsconnect_jupyter
+/export/anaconda/bin/jupyter-serverextension enable --sys-prefix --py rsconnect_jupyter
