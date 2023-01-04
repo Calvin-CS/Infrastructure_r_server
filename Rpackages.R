@@ -17,6 +17,7 @@ install_github_if_missing("rstudio-education","dsbox")
 install_github_if_missing("geocompr","geocompkg")
 install_github_if_missing("dtkaplan","submitr")
 install_github_if_missing("baumer-lab","fec12")
+install_github_if_missing("rpruim","deltaMethod")
 
 # check for archived / source install packages
 install_src_if_missing <- function(pkg, srcurl) {
