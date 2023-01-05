@@ -78,6 +78,7 @@ rrdtool
 subversion
 texlive
 texlive-latex-extra
+texlive-xetex
 unzip
 vim-tiny
 wget
