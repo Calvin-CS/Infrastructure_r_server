@@ -143,6 +143,10 @@ install_noncran_if_missing <- function(pkg,repostring) {
   if (!nzchar(system.file(package = pkg))) {
     install.packages(pkg, repos = repostring)
     print("1 package had to be installed.")
+    if(pkg == 'cmdstanr') {
+      library(cmdstanr)
+      set_cmdstan_path('/usr/local/cmdstan')
+    }
   }
 }
 
