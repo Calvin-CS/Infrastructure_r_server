@@ -136,8 +136,18 @@ install_github_if_missing("dtkaplan","submitr")
 install_github_if_missing("baumer-lab","fec12")
 install_github_if_missing("rpruim","deltaMethod")
 install_github_if_missing("stacyderuiter","StatTutor")
-install_github_if_missing("rmcelreath","rethinking")
 install_github_if_missing("CalvinData","CalvinBayes")
+
+# rethinking requires the cmdstanr stuff first
+install_noncran_if_missing <- function(pkg,repostring) {
+  if (!nzchar(system.file(package = pkg))) {
+    install.packages(pkg, repos = repostring)
+    print("1 package had to be installed.")
+  }
+}
+
+install_noncran_if_missing('cmdstanr','https://mc-stan.org/r-packages/')
+install_github_if_missing("rmcelreath","rethinking")
 
 # check for archived / source install packages
 install_src_if_missing <- function(pkg, srcurl) {
