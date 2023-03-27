@@ -24,6 +24,7 @@ if [ ! -f /etc/profile.d/cmdstan.sh ]
 then	
 	echo '#!/bin/bash' > /etc/profile.d/cmdstan.sh
 	echo 'export PATH=$PATH:/usr/local/cmdstan/bin' >> /etc/profile.d/cmdstan.sh
+	echo 'export CMDSTAN=/usr/local/cmdstan' >> /etc/profile.d/cmdstan.sh
 	chmod 0755 /etc/profile.d/cmdstan.sh
 fi
 
