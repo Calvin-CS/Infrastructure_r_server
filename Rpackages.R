@@ -37,6 +37,7 @@ my_packages <- c(
   'ggplot2',
   'ggspatial',
   'ggthemes',
+  'glmmTMB',
   'grDevices',
   'grid',
   'gt',
