@@ -20,6 +20,7 @@ my_packages <- c(
   'datasets',
   'Devore7',
   'devtools',
+  'DHARMa',
   'directlabels',
   'downloader',
   'dplyr',
@@ -137,6 +138,7 @@ install_github_if_missing("dtkaplan","submitr")
 install_github_if_missing("baumer-lab","fec12")
 install_github_if_missing("rpruim","deltaMethod")
 install_github_if_missing("stacyderuiter","StatTutor")
+install_github_if_missing("stacyderuiter","s245")
 install_github_if_missing("CalvinData","CalvinBayes")
 
 # rethinking requires the cmdstanr stuff first
