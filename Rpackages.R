@@ -105,6 +105,7 @@ my_packages <- c(
   'sys',
   'TeachingDemos',
   'terra',
+  'tfdatasets',
   'tidybayes',
   'tidygeocoder',
   'tidymodels',
