@@ -109,6 +109,7 @@ my_packages <- c(
   'tidybayes',
   'tidygeocoder',
   'tidymodels',
+  'tidyquant',
   'tidyr',
   'tidyverse',
   'timeDate',
