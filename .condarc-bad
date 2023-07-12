@@ -1,8 +1,8 @@
 ssl_verify: true
 channels:
+- defaults
 - conda-forge
 - pytorch
 - fastai
-- default
-- main
+channel_priority: strict
 allow_conda_downgrades: true

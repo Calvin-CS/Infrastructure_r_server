@@ -2,7 +2,8 @@
 
 SCRIPT_DIR=$(cd -P -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)
 DATETIME=`date +%Y%m%d%H%M`
-for PACKAGE in anaconda r python
+#for PACKAGE in anaconda r python
+for PACKAGE in anaconda
 do
 	# build the debian package
 	cd $SCRIPT_DIR
