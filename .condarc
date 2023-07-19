@@ -1,8 +1,9 @@
 ssl_verify: true
 channels:
-- conda-forge
 - pytorch
 - fastai
 - default
 - main
+- base
 allow_conda_downgrades: true
+solver: libmamba
