@@ -13,7 +13,7 @@ spec:
   mountOptions:
     - soft
     - relatime
-    - vers=3
+    - vers=4.2
     - namlen=255
     - proto=tcp
     - timeo=600
@@ -22,5 +22,5 @@ spec:
     - acl
     - noac
   nfs:
-    path: /export/rprojects
+    path: /rprojects
     server: katzstunnel.cs.calvin.edu
