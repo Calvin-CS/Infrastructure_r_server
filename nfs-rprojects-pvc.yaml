@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc-nfs-aznfs-rprojects
+  name: pvc-nfs-katzstunnel-rprojects
 spec:
   storageClassName: nfs
   accessModes:
