@@ -12,9 +12,18 @@ rm -rf miniconda.sh
 
 # install and enable jupyter and appropriate notebook extensions
 export PATH=/opt/python/$PYTHON_VERSION/bin:$PATH
-/opt/python/$PYTHON_VERSION/bin/pip install jupyter jupyterlab rsp_jupyter rsconnect_jupyter rsconnect_python workbench_jupyterlab sklearn pandas
+/opt/python/$PYTHON_VERSION/bin/pip install jupyter jupyterlab rsp_jupyter rsconnect_jupyter rsconnect_python workbench_jupyterlab sklearn pandas scikit-learn
 /opt/python/$PYTHON_VERSION/bin/jupyter-nbextension install --sys-prefix --py rsp_jupyter 
 /opt/python/$PYTHON_VERSION/bin/jupyter-nbextension enable --sys-prefix --py rsp_jupyter 
 /opt/python/$PYTHON_VERSION/bin/jupyter-nbextension install --sys-prefix --py rsconnect_jupyter 
 /opt/python/$PYTHON_VERSION/bin/jupyter-nbextension enable --sys-prefix --py rsconnect_jupyter 
 /opt/python/$PYTHON_VERSION/bin/jupyter-serverextension enable --sys-prefix --py rsconnect_jupyter
+
+# make a symlink to myself
+if [ -L /opt/python/python ] ; then
+	echo "Link exists -- skipping"
+else
+        echo "Creating symlink"
+	cd /opt/python
+	ln -s /opt/python python
+fi
