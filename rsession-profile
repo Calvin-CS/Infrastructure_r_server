@@ -1,2 +1,7 @@
-export PATH=$PATH:/opt/R/4.2.0/bin:/opt/python/3.9.12/bin
-export RETICULATE_PYTHON=/opt/python/3.9.12/bin/python
+# pre-FA23
+#export PATH=$PATH:/opt/R/4.2.0/bin:/opt/python/3.9.12/bin
+#export RETICULATE_PYTHON=/opt/python/3.9.12/bin/python
+
+# FA23
+export PATH=$PATH:/opt/R/4.2.2/bin:/opt/anaconda/bin
+export RETICULATE_PYTHON=/opt/anaconda/bin/python
