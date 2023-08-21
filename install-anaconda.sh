@@ -86,3 +86,6 @@ pip install rpy2
 /export/anaconda/bin/jupyter-nbextension install --sys-prefix --py rsconnect_jupyter
 /export/anaconda/bin/jupyter-nbextension enable --sys-prefix --py rsconnect_jupyter
 /export/anaconda/bin/jupyter-serverextension enable --sys-prefix --py rsconnect_jupyter
+
+# pip jupyterlab extension
+pip install workbench_jupyterlab
