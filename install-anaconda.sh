@@ -78,6 +78,10 @@ pip install jupyter \
 	rsconnect_python \
 	workbench_jupyterlab
 pip install rpy2
+# 2023-08-27 ken
+pip install pins \
+	orjson \
+	vega_datasets
 /usr/bin/yes | conda clean -a
 
 # enable jupyer extensions
