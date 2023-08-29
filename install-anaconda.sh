@@ -42,6 +42,9 @@ conda install -y fastai \
 	anaconda-navigator \
 	tensorflow
 echo "**** Pip - install packages"
+# upgrade python tools
+pip install --upgrade pip setuptools wheel
+
 pip install gmplot \
 	sentencepiece
 pip install numpy \
