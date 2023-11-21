@@ -57,6 +57,7 @@ my_packages <- c(
   'maps',
   'mapview',
   'MASS',
+  'mgcViz',
   'mnormt',
   'modelr',
   'mosaic',
