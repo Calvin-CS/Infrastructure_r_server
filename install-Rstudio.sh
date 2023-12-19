@@ -21,8 +21,10 @@ if test -f ${RSW_NAME}-${RSW_VERSION}-amd64.deb; then
 	if test -f /usr/sbin/rstudio-server; then
 		/usr/sbin/rstudio-server suspend-all
 		/usr/sbin/rstudio-server offline
+		/usr/bin/rstudio-launcher stop
 		gdebi -n ${RSW_NAME}-${RSW_VERSION}-amd64.deb
 		/usr/sbin/rstudio-server restart
+		/usr/bin/rstudio-launcher start
 		/usr/sbin/rstudio-server online
 
 	# otherwise, just install it
