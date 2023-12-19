@@ -5,7 +5,7 @@
 #export RSW_VERSION=2022.07.1-554.pro3
 #export RSW_VERSION=2022.07.2-576.pro12
 #export RSW_VERSION=2022.12.0-353.pro20
-export RSW_VERSION=2023.09.1
+export RSW_VERSION=2023.12.0
 export RSW_NAME=rstudio-workbench
 export RSW_DOWNLOAD_URL=https://download2.rstudio.org/server/focal/amd64
 
