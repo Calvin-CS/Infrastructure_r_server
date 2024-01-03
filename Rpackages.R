@@ -69,6 +69,7 @@ my_packages <- c(
   'nhanesA',
   'nlme',
   'nycflights13',
+  'oibiostat',
   'openintro',
   'openxlsx',
   'packrat',
