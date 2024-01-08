@@ -27,6 +27,7 @@ my_packages <- c(
   'e1071',
   'faraway',
   'fastR2',
+  'filelock',
   'forcats',
   'fpp3',
   'gapminder',
