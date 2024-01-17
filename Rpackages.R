@@ -2,6 +2,7 @@
 my_packages <- c(
   'abd',
   'alr4',
+  'altair',
   'AmesHousing',
   'animation',
   'babynames',
@@ -120,7 +121,9 @@ my_packages <- c(
   'triangle',
   'unvotes',
   'vcd',
+  'vegalite',
   'vip',
+  'V8',
   'xgboost'
 )
 not_installed <- my_packages[!(my_packages %in% installed.packages()[ , "Package"])]
@@ -145,6 +148,7 @@ install_github_if_missing("stacyderuiter","StatTutor")
 install_github_if_missing("stacyderuiter","s245")
 install_github_if_missing("CalvinData","CalvinBayes")
 install_github_if_missing("OI-Biostat","oi_biostat_data")
+install_github_if_missing("vegawidget","vegabrite")
 
 # rethinking requires the cmdstanr stuff first
 install_noncran_if_missing <- function(pkg,repostring) {

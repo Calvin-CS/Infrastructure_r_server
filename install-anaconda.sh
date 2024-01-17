@@ -74,6 +74,8 @@ pip install numpy \
 	odfpy \
 	pexpect
 pip install 'fastcore>1.3.26'
+pip install altair \
+	vega_datasets
 pip install jupyter \
 	jupyterlab \
 	rsp_jupyter \
