@@ -75,6 +75,7 @@ pip install numpy \
 	pexpect
 pip install 'fastcore>1.3.26'
 pip install altair \
+	altair_saver \
 	vega_datasets
 pip install jupyter \
 	jupyterlab \
