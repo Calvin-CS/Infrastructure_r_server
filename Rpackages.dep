@@ -2,6 +2,7 @@ acl
 build-essential
 bzip2-doc
 curl
+firefox-geckodriver
 fontconfig
 fontconfig-config
 fonts-dejavu-core

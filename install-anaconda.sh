@@ -76,7 +76,8 @@ pip install numpy \
 pip install 'fastcore>1.3.26'
 pip install altair \
 	altair_saver \
-	vega_datasets
+	vega_datasets \
+	vl-convert-python
 pip install jupyter \
 	jupyterlab \
 	rsp_jupyter \
