@@ -2,7 +2,6 @@ acl
 build-essential
 bzip2-doc
 curl
-firefox-geckodriver
 fontconfig
 fontconfig-config
 fonts-dejavu-core
@@ -45,12 +44,12 @@ libpaper-utils
 libpcre2-16-0
 libpcre2-32-0
 libpcre2-dev
-libpcre2-posix2
+libpcre2-posix3
 libpixman-1-0
 libpng-dev
 libpq-dev
 libsm6
-libssl1.1
+libssl3
 libssl-dev
 libtcl8.6
 libthai0
@@ -61,7 +60,7 @@ libtk8.6
 libudunits2-dev
 libuser
 libuser1-dev
-libwebp6
+libwebp7
 libxcb-render0
 libxcb-shm0
 libxft2

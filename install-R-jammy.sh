@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # install R package dependencies
-xargs apt install -y < Rpackages.dep
+xargs apt install -y < Rpackages-jammy.dep
 
 # install R
 export R_VERSION=4.3.2
-curl -O https://cdn.rstudio.com/r/ubuntu-2004/pkgs/r-${R_VERSION}_1_amd64.deb
+curl -O https://cdn.rstudio.com/r/ubuntu-2204/pkgs/r-${R_VERSION}_1_amd64.deb
 gdebi -n r-${R_VERSION}_1_amd64.deb
 rm -rf r-${R_VERSION}_1_amd64.deb
 

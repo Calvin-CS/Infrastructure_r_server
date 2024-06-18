@@ -42,6 +42,9 @@ conda install -y fastai \
 	anaconda-navigator \
 	tensorflow
 echo "**** Pip - install packages"
+# upgrade python tools
+pip install --upgrade pip setuptools wheel
+
 pip install gmplot \
 	sentencepiece
 pip install numpy \
@@ -71,6 +74,10 @@ pip install numpy \
 	odfpy \
 	pexpect
 pip install 'fastcore>1.3.26'
+pip install altair \
+	altair_saver \
+	vega_datasets \
+	vl-convert-python
 pip install jupyter \
 	jupyterlab \
 	rsp_jupyter \
@@ -78,6 +85,10 @@ pip install jupyter \
 	rsconnect_python \
 	workbench_jupyterlab
 pip install rpy2
+# 2023-08-27 ken
+pip install pins \
+	orjson \
+	vega_datasets
 /usr/bin/yes | conda clean -a
 
 # enable jupyer extensions
@@ -86,3 +97,6 @@ pip install rpy2
 /export/anaconda/bin/jupyter-nbextension install --sys-prefix --py rsconnect_jupyter
 /export/anaconda/bin/jupyter-nbextension enable --sys-prefix --py rsconnect_jupyter
 /export/anaconda/bin/jupyter-serverextension enable --sys-prefix --py rsconnect_jupyter
+
+# pip jupyterlab extension
+pip install workbench_jupyterlab

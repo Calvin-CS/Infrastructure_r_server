@@ -3,5 +3,9 @@
 #export RETICULATE_PYTHON=/opt/python/3.9.12/bin/python
 
 # FA23
-export PATH=$PATH:/opt/R/4.2.2/bin:/opt/anaconda/bin
+#export PATH=$PATH:/opt/R/4.2.2/bin:/opt/anaconda/bin
+#export RETICULATE_PYTHON=/opt/anaconda/bin/python
+
+# SP24
+export PATH=$PATH:/opt/R/4.3.2/bin:/opt/anaconda/bin
 export RETICULATE_PYTHON=/opt/anaconda/bin/python
