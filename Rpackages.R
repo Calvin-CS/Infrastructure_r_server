@@ -46,6 +46,7 @@ my_packages <- c(
   'grDevices',
   'grid',
   'gt',
+  'HistData',
   'Hmisc',
   'ISLR',
   'ISLR2',
@@ -151,6 +152,8 @@ install_github_if_missing("stacyderuiter","s245")
 install_github_if_missing("CalvinData","CalvinBayes")
 install_github_if_missing("OI-Biostat","oi_biostat_data")
 install_github_if_missing("vegawidget","vegabrite")
+install_github_if_missing("rpruim","Lock5withR")
+install_github_if_missing("speegled","fosdata")
 
 # rethinking requires the cmdstanr stuff first
 install_noncran_if_missing <- function(pkg,repostring) {
