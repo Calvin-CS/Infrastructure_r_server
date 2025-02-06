@@ -1,8 +1,8 @@
 #!/bin/bash
 
-export ANACONDA_VER=2023.07-0
+export ANACONDA_VER=2024.10-1
 export ANACONDA_DOWNLOAD_URL=https://repo.anaconda.com/archive
-export ANACONDA_PATH=/export/anaconda
+export ANACONDA_PATH=/export/anaconda/
 
 # download and install base anaconda
 wget -O anaconda.sh $ANACONDA_DOWNLOAD_URL/Anaconda3-$ANACONDA_VER-Linux-x86_64.sh 
@@ -59,7 +59,7 @@ pip install numpy \
 	flask \
 	pytest \
 	colorama \
-       	birdseye \
+	birdseye \
 	beautifulsoup4 \
 	pandas \
 	lxml \

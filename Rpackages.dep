@@ -12,6 +12,7 @@ gfortran-9
 git
 icu-devtools
 krb5-user
+libarchive-dev
 libblas-dev
 libblas3
 libbz2-dev

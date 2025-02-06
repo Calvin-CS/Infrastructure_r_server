@@ -4,7 +4,7 @@
 xargs apt install -y < Rpackages.dep
 
 # install R
-export R_VERSION=4.4.1
+export R_VERSION=4.4.2
 curl -O https://cdn.rstudio.com/r/ubuntu-2004/pkgs/r-${R_VERSION}_1_amd64.deb
 gdebi -n r-${R_VERSION}_1_amd64.deb
 rm -rf r-${R_VERSION}_1_amd64.deb

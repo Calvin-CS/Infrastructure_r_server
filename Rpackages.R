@@ -2,7 +2,6 @@
 my_packages <- c(
   'abd',
   'alr4',
-  'altair',
   'AmesHousing',
   'animation',
   'babynames',
@@ -93,7 +92,6 @@ my_packages <- c(
   'reticulate',
   'rlist',
   'RMariaDB',
-  'rnoaa',
   'rpart.plot',
   'rsconnect',
   'rstan',
@@ -154,6 +152,9 @@ install_github_if_missing("OI-Biostat","oi_biostat_data")
 install_github_if_missing("vegawidget","vegabrite")
 install_github_if_missing("rpruim","Lock5withR")
 install_github_if_missing("speegled","fosdata")
+install_github_if_missing("rmcelreath","rethinking")
+install_github_if_missing("vegawidget","altair")
+install_github_if_missing("stan-dev","cmdstanr")
 
 # rethinking requires the cmdstanr stuff first
 install_noncran_if_missing <- function(pkg,repostring) {
@@ -167,8 +168,7 @@ install_noncran_if_missing <- function(pkg,repostring) {
   }
 }
 
-install_noncran_if_missing('cmdstanr','https://mc-stan.org/r-packages/')
-install_github_if_missing("rmcelreath","rethinking")
+#install_noncran_if_missing('cmdstanr','https://stan-dev.r-universe.dev')
 
 # check for archived / source install packages
 install_src_if_missing <- function(pkg, srcurl) {

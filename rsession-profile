@@ -13,3 +13,7 @@
 # FA24
 export PATH=$PATH:/opt/R/4.4.1/bin:/opt/anaconda/bin
 export RETICULATE_PYTHON=/opt/anaconda/bin/python
+
+# SP25
+export PATH=$PATH:/opt/R/4.4.2/bin:/opt/anaconda/bin
+export RETICULATE_PYTHON=/opt/anaconda/bin/python
