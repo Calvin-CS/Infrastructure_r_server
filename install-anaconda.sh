@@ -77,7 +77,7 @@ pip install 'fastcore>1.3.26'
 
 # altair
 conda install -y \
-	conda-forge::altair \
+	'conda-forge::altair==5.2.0' \
 	conda-forge::altair_saver \
 	conda-forge::vega_datasets
 pip install vl-convert-python
