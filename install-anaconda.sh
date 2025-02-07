@@ -74,10 +74,15 @@ pip install numpy \
 	odfpy \
 	pexpect
 pip install 'fastcore>1.3.26'
-pip install altair \
-	altair_saver \
-	vega_datasets \
-	vl-convert-python
+
+# altair
+conda install -y \
+	conda-forge::altair \
+	conda-forge::altair_saver \
+	conda-forge::vega_datasets
+pip install vl-convert-python
+
+# jupyter
 pip install jupyter \
 	jupyterlab \
 	rsp_jupyter \
@@ -85,11 +90,14 @@ pip install jupyter \
 	rsconnect_python \
 	workbench_jupyterlab
 pip install rpy2
+
 # 2023-08-27 ken
 pip install pins \
 	orjson \
 	vega_datasets
-/usr/bin/yes | conda clean -a
+
+# clean things up!
+conda clean --all --yes --verbose
 
 # enable jupyer extensions
 /export/anaconda/bin/jupyter-nbextension install --sys-prefix --py rsp_jupyter
@@ -97,6 +105,3 @@ pip install pins \
 /export/anaconda/bin/jupyter-nbextension install --sys-prefix --py rsconnect_jupyter
 /export/anaconda/bin/jupyter-nbextension enable --sys-prefix --py rsconnect_jupyter
 /export/anaconda/bin/jupyter-serverextension enable --sys-prefix --py rsconnect_jupyter
-
-# pip jupyterlab extension
-pip install workbench_jupyterlab
