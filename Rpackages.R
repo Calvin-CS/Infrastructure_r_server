@@ -25,6 +25,7 @@ my_packages <- c(
   'downloader',
   'dplyr',
   'e1071',
+  'emmeans',
   'faraway',
   'fastR2',
   'filelock',
